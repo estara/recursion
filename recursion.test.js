@@ -19,10 +19,11 @@ describe("product", function() {
 
 describe("longest", function() {
   it("returns the length of the longest word in an array of words", function() {
-    expect(longest(["hello", "hi", "hola"])).toBe(5);
+    
     expect(longest(["abcdefg", "hijklmnop", "qrs", "tuv", "wx", "y", "z"])).toBe(9);
     expect(longest(["a", "b", "c", "d", "e"])).toBe(1);
     expect(longest(["abcde"])).toBe(5);
+    expect(longest(["hello", "hi", "hola"])).toBe(5);
   });
 });
 
@@ -56,8 +57,9 @@ describe("findIndex", function() {
 
   it("returns the first index of the value in the array if the value exists", function() {
     expect(findIndex(animals, "duck")).toBe(0);
-    expect(findIndex(animals, "cat")).toBe(1);
     expect(findIndex(animals, "pony")).toBe(2);
+    expect(findIndex(animals, "cat")).toBe(1);
+    
   });
 
   it("returns -1 if the value does not exist", function() {
